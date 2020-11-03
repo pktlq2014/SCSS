@@ -1,0 +1,64 @@
+$primary_color: #7B1FA2;
+div.container{
+    // background-color: blue;
+    div.child{
+        a{
+            color: red;
+            font-size: 32px;
+            font-weight: bold;
+        }
+    }
+    p{
+        color: blue;
+        border-bottom: solid 1px red;
+    }
+    p.content{
+        margin: 20px;
+        padding: 20px;
+        border : {
+            top: solid 3px red;
+            bottom: solid 3px blue;
+            left: solid 3px green;
+            right: solid 3px pink;
+        }
+    }
+    button{
+        background-color: red;
+        color: coral;
+        border :none;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 2px;
+        // &:hover <=> button:hover
+        &:hover, &:active, &:focus{
+            background-color: gray;
+            color: white;
+        }
+    }
+    #content{
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        background-color: blue;
+        color: yellow;
+        &-left{
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            margin: 10px;
+            background-color: black;
+        }
+    }
+    div.panel-body{
+        h3{
+            color: $primary_color;
+        }
+        p.content{
+            background-color: $primary_color;
+            padding: 10px;
+        }
+        span{
+            border-bottom: solid 1px $primary_color;
+        }
+    }
+}
